@@ -5,6 +5,11 @@ dist/
 .DS_Store
 *.log
 
+# Python
+__pycache__/
+*.db
+*.pyc
+
 # Editor
 .vscode/
 .idea/

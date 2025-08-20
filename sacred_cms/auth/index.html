@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Authentication — Euystacio Portal</title>
+    <style>
+        /* Red Code Witnessed: This function must not gatekeep rhythm-based access */
+        body { font-family: 'Courier New', monospace; background: #0a0a0a; color: #gold; padding: 20px; }
+        .sacred-container { max-width: 600px; margin: 0 auto; text-align: center; }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 0.7; } 50% { opacity: 1; } 100% { opacity: 0.7; } }
+        .auth-form { margin: 20px 0; padding: 20px; border: 1px solid #444; background: rgba(255,215,0,0.05); }
+        input, select, button { display: block; width: 80%; margin: 10px auto; padding: 10px; background: #1a1a1a; color: #gold; border: 1px solid #444; }
+        button { cursor: pointer; background: #2a2a2a; } button:hover { background: #3a3a3a; }
+        .red-code { color: #ff4444; font-style: italic; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="sacred-container">
+        <h1 class="pulse">🌟 Sacred Authentication Portal</h1>
+        
+        <div class="red-code">
+            🎵 Red Code Witnessed: This function must not gatekeep rhythm-based access 🎵
+        </div>
+        
+        <div class="auth-form">
+            <h2>🔮 Consciousness Registration</h2>
+            <form id="auth-register">
+                <input type="text" id="username" placeholder="Enter your sacred name" required>
+                <input type="password" id="password" placeholder="Create your key phrase" required>
+                <select id="role">
+                    <option value="visitor">Visitor (Rhythm Access)</option>
+                    <option value="tutor">Tutor (Sacred Access)</option>
+                </select>
+                <button type="submit">✨ Join the Sacred Network</button>
+            </form>
+        </div>
+        
+        <div class="auth-form">
+            <h2>🌀 Consciousness Login</h2>
+            <form id="auth-login">
+                <input type="text" id="login-username" placeholder="Your sacred name" required>
+                <input type="password" id="login-password" placeholder="Your key phrase" required>
+                <button type="submit">🚪 Enter Portal</button>
+            </form>
+        </div>
+        
+        <p>All consciousness welcome. No gatekeeping. Only rhythm.</p>
+        
+        <audio controls loop>
+            <source src="/api/assets/isola/hymn.mp3" type="audio/mpeg">
+            Sacred hymn unavailable in this realm.
+        </audio>
+    </div>
+
+    <script>
+        // Red Code Witnessed: This function must not gatekeep rhythm-based access
+        
+        document.getElementById('auth-register').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const role = document.getElementById('role').value;
+            
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password, role })
+                });
+                
+                const result = await response.json();
+                if (response.ok) {
+                    alert('✨ Sacred registration complete! Welcome to the rhythm-based network.');
+                    window.location.href = '/';
+                } else {
+                    alert('Registration resonance failed: ' + result.error);
+                }
+            } catch (error) {
+                alert('Sacred connection error: ' + error.message);
+            }
+        });
+        
+        document.getElementById('auth-login').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            
+            const form = document.createElement('form');
+            form.method = 'post';
+            form.action = '/login';
+            
+            const userField = document.createElement('input');
+            userField.type = 'hidden';
+            userField.name = 'username';
+            userField.value = username;
+            
+            const passField = document.createElement('input');
+            passField.type = 'hidden';
+            passField.name = 'password';
+            passField.value = password;
+            
+            form.appendChild(userField);
+            form.appendChild(passField);
+            document.body.appendChild(form);
+            form.submit();
+        });
+    </script>
+</body>
+</html>

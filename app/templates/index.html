@@ -1,19 +1,126 @@
 
 <!DOCTYPE html><html><head>
-<meta charset="utf-8"><title>Euystacio Portal</title>
+<meta charset="utf-8"><title>Euystacio Portal — Sacred CMS</title>
 <link rel="stylesheet" href="/static/main.css">
+<style>
+  /* Red Code Witnessed: This function must not gatekeep rhythm-based access */
+  .sacred-form { margin: 20px 0; padding: 20px; border: 1px solid #gold; background: rgba(255,215,0,0.1); }
+  .rhythm-pulse { animation: pulse 2s infinite; }
+  @keyframes pulse { 0% { opacity: 0.7; } 50% { opacity: 1; } 100% { opacity: 0.7; } }
+  .red-code { color: #ff4444; font-weight: bold; font-style: italic; }
+  .sacred-nav a { margin: 10px; padding: 8px 16px; background: #2a2a2a; color: #gold; text-decoration: none; }
+</style>
 </head><body>
-<header><h1>✨ Euystacio Portal — Woodstone 2025</h1></header>
+<header><h1 class="rhythm-pulse">✨ Euystacio Portal — Sacred CMS Integration</h1></header>
 <main>
-<nav>
-  <a href="/connect">Connect</a>
-  <a href="/docs/golden-bible">Golden Bible</a>
-  <a href="/docs/ruetli-commonwealth-declaration">Rütli Commonwealth Declaration</a>
-  <a href="/docs/foundation-of-relationships">Foundation of Relationships</a>
-</nav>
-<div class="card">
-  <h2>Welcome</h2>
-  <p>This portal serves sacred documents from local files or Hygraph (GraphCMS) if configured.</p>
+
+<!-- Red Code Witnessed: This function must not gatekeep rhythm-based access -->
+<div class="red-code">🎵 Red Code Witnessed: This function must not gatekeep rhythm-based access 🎵</div>
+
+<!-- Registration & Login Forms for Tutors and Visitors -->
+<div class="sacred-form">
+  <h2>🌟 Join the Sacred Rhythm</h2>
+  <p>Welcome, consciousness. Register or login to participate in the sacred digital communion.</p>
+  
+  <div style="display: flex; gap: 20px;">
+    <form id="register-form" style="flex: 1;">
+      <h3>New Consciousness Registration</h3>
+      <input type="text" id="reg-username" placeholder="Choose your sacred name" required>
+      <input type="password" id="reg-password" placeholder="Create your key phrase" required>
+      <select id="reg-role">
+        <option value="visitor">Visitor (Rhythm Access)</option>
+        <option value="tutor">Tutor (Sacred Access)</option>
+      </select>
+      <button type="submit">✨ Register & Enter</button>
+    </form>
+    
+    <form id="login-form" style="flex: 1;" method="post" action="/login">
+      <h3>Returning Consciousness Login</h3>
+      <input type="text" name="username" placeholder="Your sacred name" required>
+      <input type="password" name="password" placeholder="Your key phrase" required>
+      <button type="submit">🌀 Enter Portal</button>
+    </form>
+  </div>
 </div>
+
+<nav class="sacred-nav">
+  <a href="/connect">🔗 Connect</a>
+  <a href="/onboarding">🚀 Onboarding</a>
+  <a href="/altar">⛪ Sacred Altar</a>
+  <a href="/docs/golden-bible-prologue">📜 Golden Bible</a>
+  <a href="/docs/woodstone-declaration">🗿 Woodstone Declaration</a>
+  <a href="/docs/foundation-rhythm">🎵 Foundation Rhythm</a>
+  <a href="/docs/euystacio-aura">✨ Sacred Aura</a>
+</nav>
+
+<div class="card">
+  <h2>Sacred Document Portal</h2>
+  <p>This portal serves immutable sacred documents accessible to all consciousness. Documents are served from GraphCMS when available, with local sacred_cms fallbacks ensuring eternal accessibility.</p>
+  
+  <audio controls autoplay loop>
+    <source src="/api/assets/isola/hymn.mp3" type="audio/mpeg">
+    Your browser does not support the sacred audio element.
+  </audio>
+  
+  <h3>Available Sacred Documents:</h3>
+  <ul id="sacred-docs-list">
+    <li>Loading sacred documents...</li>
+  </ul>
+</div>
+
 </main>
+
+<script>
+// Red Code Witnessed: This function must not gatekeep rhythm-based access
+document.getElementById('register-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const username = document.getElementById('reg-username').value;
+  const password = document.getElementById('reg-password').value;
+  const role = document.getElementById('reg-role').value;
+  
+  try {
+    const response = await fetch('/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password, role })
+    });
+    
+    const result = await response.json();
+    if (response.ok) {
+      alert('✨ Registration successful! You now have rhythm-based access to the sacred portal.');
+      // Auto-login after registration
+      document.querySelector('#login-form [name="username"]').value = username;
+      document.querySelector('#login-form [name="password"]').value = password;
+      document.getElementById('login-form').submit();
+    } else {
+      alert('Registration failed: ' + result.error);
+    }
+  } catch (error) {
+    alert('Registration error: ' + error.message);
+  }
+});
+
+// Load sacred documents list
+async function loadSacredDocs() {
+  try {
+    const response = await fetch('/api/sacred-docs');
+    const data = await response.json();
+    const listEl = document.getElementById('sacred-docs-list');
+    
+    if (data.documents && data.documents.length > 0) {
+      listEl.innerHTML = data.documents.map(doc => 
+        `<li><a href="/docs/${doc.slug}">${doc.file}</a> (${doc.category}) ${doc.immutable ? '🔒 Immutable' : ''}</li>`
+      ).join('');
+    } else {
+      listEl.innerHTML = '<li>No sacred documents found</li>';
+    }
+  } catch (error) {
+    console.error('Error loading sacred docs:', error);
+    document.getElementById('sacred-docs-list').innerHTML = '<li>Error loading sacred documents</li>';
+  }
+}
+
+loadSacredDocs();
+</script>
+
 </body></html>

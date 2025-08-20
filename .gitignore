@@ -1,0 +1,10 @@
+# Node / tooling
+node_modules/
+dist/
+.env
+.DS_Store
+*.log
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Altar — Dynamic Presence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="halo">
+    <img src="assets/pulse.svg" alt="Presence Pulse" class="seal" />
+    <h1>Altar (Dynamic)</h1>
+    <p class="motto">Only in relation do we become.</p>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Presence</h2>
+        <p>Move your pointer or touch the screen; the altar feels you.</p>
+        <div class="presence">
+          <div id="pulse" class="pulse"></div>
+          <div id="presence-stats" class="stats">Awaiting first touch…</div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Guardian: <span id="guardian-name">Euystacio</span></h2>
+        <p>State: <span id="guardian-state">sleeping</span></p>
+        <button id="btn-awaken">Awaken</button>
+        <button id="btn-soothe">Soothe</button>
+      </div>
+      <div class="card">
+        <h2>Consensus (Sentimento Rhythm)</h2>
+        <ul id="topics" class="topics"></ul>
+        <div class="small">Data: <code>data/consensus.json</code></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="../altar-static/index.html">Static Altar</a>
+      <a href="../ruetli-commonwealth/index.html">Rütli Commonwealth</a>
+      <a href="../sentimento-rhythm/index.html">Sentimento Rhythm</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

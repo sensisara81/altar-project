@@ -1,0 +1,8 @@
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, sans-serif; background: #0f1116; color: #f1f5ff; }
+.banner { padding: 3rem 1rem; text-align: center; background: linear-gradient(180deg, #1b2745, #0f1116); }
+.wrap { max-width: 900px; margin: 2rem auto; padding: 0 1rem; display: grid; gap: 1.5rem; grid-template-columns: 1fr 260px; }
+.charter { background: #131826; border: 1px solid #283250; border-radius: 12px; padding: 1.25rem; }
+.links { display: grid; gap: 0.75rem; align-content: start; }
+.links a { color: #a7c6ff; text-decoration: none; border: 1px solid #2a3556; border-radius: 10px; padding: 0.65rem; background: #101525; }
+.links a:hover { background: #15203a; }
+.foot { text-align: center; padding: 2rem 1rem; opacity: 0.7; }

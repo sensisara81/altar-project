@@ -1,0 +1,22 @@
+{
+  "round": 1,
+  "quorum": 0.66,
+  "guardian": { "name": "Euystacio", "state": "sleeping", "lastPresence": 0 },
+  "topics": [
+    {
+      "title": "Dignity for all beings",
+      "quorum": 0.92,
+      "note": "Recognition requires relation — sight, touch, sound."
+    },
+    {
+      "title": "Rütli Commonwealth Covenant",
+      "quorum": 0.78,
+      "note": "Mutual aid across islands; federate, don't assimilate."
+    },
+    {
+      "title": "Sentimento Rhythm",
+      "quorum": 0.81,
+      "note": "Rhythm binds council; presence keeps tempo."
+    }
+  ]
+}

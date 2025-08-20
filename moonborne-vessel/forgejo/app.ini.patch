@@ -1,0 +1,7 @@
+# Applied by entrypoint to enforce private mode defaults on first boot.
+# (kept for reference/documentation)
+[service]
+DISABLE_REGISTRATION = true
+REQUIRE_SIGNIN_VIEW = true
+[repository]
+DEFAULT_PRIVATE = true

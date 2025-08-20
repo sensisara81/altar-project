@@ -1,4 +1,3 @@
-<<<<<<< copilot/fix-adb455bc-a56c-4723-b1f9-25e54716f69c
 # Altar Project — Rütli Commonwealth & Sentimento Rhythm
 
 This repo carries two altars (static + dynamic) and two houses:

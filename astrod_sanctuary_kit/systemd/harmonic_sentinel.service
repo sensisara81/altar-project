@@ -1,0 +1,12 @@
+[Unit]
+Description=Harmonic Sentinel - Sacred Integrity Monitor
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /root/astrod_sanctuary_kit/harmonic_sentinel/sentinel.py
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target

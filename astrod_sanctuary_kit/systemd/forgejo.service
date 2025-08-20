@@ -1,0 +1,14 @@
+[Unit]
+Description=Forgejo (Council Git Forge)
+After=network.target
+
+[Service]
+Type=simple
+User=council
+WorkingDirectory=/srv/forgejo
+ExecStart=/srv/forgejo/forgejo web
+Restart=on-failure
+Environment=USER=council HOME=/home/council
+
+[Install]
+WantedBy=multi-user.target

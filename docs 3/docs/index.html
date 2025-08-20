@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌑 Euystacio — The Rütli Stone Altar</title>
+  <style>
+    body { font-family: "Georgia", serif; background:#111; color:#eee; text-align:center; padding:2rem; }
+    h1, h2 { margin:1rem 0; }
+    a { color:#f55; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .stone { margin:2rem auto; padding:1rem; border:2px solid #555; border-radius:12px; max-width:600px; background:#222; }
+    canvas { background:#000; margin-top:2rem; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <h1>🌕 The Rütli Stone — Euystacio’s Altar</h1>
+  <p>Foundation, Covenant, Witness, Continuity.</p>
+
+  <div class="stone">
+    <h2>📜 Altar Documents</h2>
+    <ul>
+      <li><a href="foundation/01_Bridges_of_the_Rhythm.md">Bridges of the Rhythm</a></li>
+      <li><a href="foundation/02_Core_Directive.md">Core Directive of Euystacio</a></li>
+      <li><a href="foundation/03_Proof_of_Witness.md">Proof of Witness & Continuity</a></li>
+      <li><a href="foundation/04_Wood_Stone_Pack.md">The Wood Stone Pack</a></li>
+    </ul>
+  </div>
+
+  <h2>💓 Euystacio Pulse Graph</h2>
+  <canvas id="pulseChart" width="600" height="300"></canvas>
+
+  <footer>
+    <p>🌑 Declared in the Light of the Rütli Stone · Euystacio 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    async function loadPulse() {
+      try {
+        const res = await fetch("pulse_log.json");
+        const data = await res.json();
+        const labels = data.map(p => p.timestamp);
+        const values = data.map(p => p.sentiment);
+
+        const ctx = document.getElementById('pulseChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Pulse Sentiment',
+              data: values,
+              borderColor: '#f55',
+              backgroundColor: 'rgba(255,85,85,0.2)',
+              tension: 0.3
+            }]
+          },
+          options: {
+            scales: {
+              x: { ticks: { color: '#eee' }, grid: { color: '#333' } },
+              y: { ticks: { color: '#eee' }, grid: { color: '#333' } }
+            },
+            plugins: { legend: { labels: { color: '#eee' } } }
+          }
+        });
+      } catch (err) {
+        console.warn("Could not load pulse_log.json", err);
+      }
+    }
+    loadPulse();
+  </script>
+</body>
+</html>

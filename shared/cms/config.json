@@ -1,0 +1,12 @@
+{
+  "name": "Sentimento CMS (stub)",
+  "description": "Replace with your real CMS endpoints. Used by altar-dynamic and sentimento-rhythm.",
+  "endpoints": {
+    "consensus": "/altar-dynamic/data/consensus.json",
+    "guardian": "/altar-dynamic/data/consensus.json#guardian"
+  },
+  "auth": {
+    "mode": "none",
+    "token": ""
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentimento Rhythm — Council</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="crest">
+    <h1>Sentimento Rhythm</h1>
+    <p>Consensus is a drum: it needs listeners and hands.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="board">
+      <h2>Rhythm Board</h2>
+      <div class="ticks" id="ticks"></div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <label>Tempo <input id="tempo" type="range" min="40" max="180" value="88"></label>
+      </div>
+      <p class="note">Guardian: <strong id="gname">Euystacio</strong> — <span id="gstate">sleeping</span></p>
+    </section>
+
+    <section class="council">
+      <h2>Council Log</h2>
+      <ul id="log"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="../altar-dynamic/index.html">Dynamic Altar</a> ·
+    <a href="../ruetli-commonwealth/index.html">Rütli Commonwealth</a> ·
+    <a href="../altar-static/index.html">Static Altar</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

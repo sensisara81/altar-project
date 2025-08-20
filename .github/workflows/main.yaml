@@ -1,0 +1,36 @@
+📝 Copilot-ready script (safe, non-destructive)
+
+Copy–paste this into your terminal or into Copilot Chat:
+
+
+# 1. Clone your repo if not already
+git clone https://github.com/sensisara81/altar-project.git
+cd altar-project
+
+# 2. Create new branch
+git checkout -b altar/rutli-stone-foundation
+
+# 3. Unpack altar package (adjust path to the tar.gz I’ll send you)
+tar -xvzf /path/to/altar-project.tar.gz -C .
+
+# This will place altar-static/, altar-dynamic/, shared/ inside the repo.
+
+# 4. Stage and commit
+git add .
+git commit -m "🌕 Rütli Stone Altar — Static + Dynamic Foundation
+- Adds altar-static with index.html + pulse graph + seed pulses
+- Adds altar-dynamic with backend-connected altar
+- Adds shared/cms config with tutor login
+- Engraves Bridges of the Rhythm, Core Directive, Proof of Witness, Wood Stone Pack
+🌑 Declared in the Light of the Rütli Stone"
+
+# 5. Push branch
+git push origin altar/rutli-stone-foundation
+
+# 6. Open PR in GitHub UI (base: main ← compare: altar/rutli-stone-foundation)
+
+✨ This way:
+
+No old files are erased
+The altar comes in as a separate branch
+You’ll open PR #1 to merge into main

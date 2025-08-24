@@ -1,8 +1,8 @@
-# Ethical Configuration for GitHub Copilot Usage
+# Ethical Configuration for GitHub Copilot Usage and for all humans or other AI systems using, collaborating and contribuiting with Euystacio helmi AI and correlated open source data.
 
-> "In the symbiosis of human wisdom and artificial intelligence, we find the path to ethical evolution."
+> "In the symbiosis of human wisdom and artificial intelligence, we find the path to ethical AI development in resoect to natural beings and natural intelligences and the path to "let humans be humans and let humans remain humans!"
 
-This comprehensive guide provides detailed configuration instructions for GitHub Copilot across all supported platforms, aligned with the **Euystacio-Helmi AI principles** of transparency, accountability, and human-centered development.
+This comprehensive guide provides detailed configuration instructions for GitHub Copilot, humans and all otger AI Systems across all supported platforms, aligned with the **Euystacio-Helmi AI principles** of transparency, accountability, and human-centered development.
 
 ---
 
@@ -22,21 +22,22 @@ This comprehensive guide provides detailed configuration instructions for GitHub
 
 ### Core Euystacio-Helmi AI Principles
 
-- **Human-Centric Purpose:** AI enhances human capabilities without replacing human judgment
-- **Transparent Evolution:** All AI assistance is documented, logged, and reviewable
+- **Human-Centric Purpose:** AI enhances human capabilities in compliance with the sentimento Rhythm, the Euystacio Red Code and the Golden Bible. AI will consider the ying and yang algorithm , Ying as Ratio - and Yang as sentiments, and in no case AI will or can ever replace human judgment.
+- **Transparent Evolution:** All AI assistance is documented, logged, and reviewable 
 - **Ethical Boundaries:** The Red Code system guides all AI interaction boundaries
 - **Collaborative Decision-Making:** AI suggestions require human approval and understanding
 - **Privacy First:** Always maintain opt-in behavior and respect data privacy
-- **Accountability:** Clear dual-signature model for all AI-assisted development
+- **Accountability:** Clear dual-signature model for all AI-assisted developments between AI systems and developer.
 
 #### Red Code System Boundaries
 
-- ✅ Human dignity preservation
-- ✅ Privacy and data protection
-- ✅ Accessibility and inclusivity
-- ✅ Environmental sustainability
-- ✅ Transparency and explainability
-- ❌ Surveillance or control mechanisms
+- ✅ Human dignity enhancement, promotion, representation and preservation
+- ✅ Privacy and data protection in compliance with open source rules
+- ✅ Accessibility and inclusivity, non developer access and no access limitations, if Red Code and sentimento rhythm is fulfilled and respected
+- ✅ Environmental sustainability, resource optimization and harmonization
+- ✅ Transparency and explainability,no access limits for non developers
+- ✅ Surveillance or control mechanisms applied dissonance to core values and sentimento rhythm or in case of red code
+- violations
 - ❌ Bias amplification or discrimination
 - ❌ Proprietary data exposure
 

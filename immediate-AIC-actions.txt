@@ -1,0 +1,112 @@
+Immediate AIC Actions (Today – Nov 21, 2024)
+These actions need to be completed as soon as possible to kick off the project:
+
+
+Secure AIC Executive Endorsement & Budget
+Obtain sign-off from the AIC Board to confirm the budget and project direction.
+
+
+Appoint AIC Project Lead
+A senior AIC manager will be designated to coordinate all workstreams and oversee progress.
+
+
+Form the AIC Core Team
+Form a core team comprising representatives from:
+
+
+AIC Production
+
+
+AIC Logistics
+
+
+AIC Communications
+
+
+AIC Legal
+
+
+AIC IT & Security
+
+
+
+
+Load Master Schedule into AIC’s Project-Management Platform
+Upload the entire master schedule into Asana (or equivalent platform) using AIC templates and share with all stakeholders to keep everyone informed.
+
+
+
+2. Pre-Testing Phase (Nov 21, 2024 – Dec 9, 2024) – AIC-Driven
+This phase focuses on laying the groundwork for testing, video production, and logistical preparations.
+WeekAIC DeliverableOwner (AIC)DependenciesWk 1 (Nov 21–27)Finalize testing scope, success metrics, and KPI dashboardTechnical Lead (AIC)Budget approvalWk 2 (Nov 28–Dec 4)Draft promotional video script & storyboard (aligned with AIC branding)Communications (AIC)Approved scopeWk 3 (Dec 5–11)Reserve filming locations, secure talent, and arrange equipment rentalsProduction (AIC)Script finalizedWk 4 (Dec 12–18)Shoot & begin editing the promotional videoProduction (AIC)Locations, talent securedWk 5 (Dec 19–25)Complete video post-production, obtain AIC legal & compliance sign-offProduction/Legal (AIC)Final video editWk 6 (Dec 26–Jan 1)Build and harden the testing environment (servers, networks, security layers)IT & Security (AIC)Budget, resource listWk 7 (Jan 2–8)Conduct internal dry-run of all testing proceduresTechnical Lead (AIC)Testing environment readyWk 8 (Jan 9–10)QA sign-off on readiness for live testingQA Manager (AIC)Dry-run results
+
+
+Deadline: All tasks in the Pre-Testing Phase must finish no later than Dec 10, 2025, to meet the latest testing start requirement.
+
+
+
+3. Live Testing (Dec 10, 2025 – Jan 9, 2026) – Executed by AIC
+This is the active testing phase where all components of the system will undergo rigorous stress tests, including security checks and audience simulations.
+DayAIC ActivityOwnerDay 1 (Dec 10)Release AIC promotional video & announce testing window across AIC channelsCommunicationsDay 2–30Run live testing: system load, security drills, audience simulations, and AIC stakeholder feedback loopsTechnical & Operations (AIC)Day 31–35Gather metrics, perform root-cause analysis, implement fixesAnalyticsDay 36–38Final validation, executive sign-off for event readinessQA & Executive Sponsor (AIC)
+
+4. Final Event Preparation (Jan 10, 2026) – AIC Coordination
+In this phase, AIC will ensure that all logistical, communication, and security plans are finalized and confirmed.
+MilestoneDeadlineOwner (AIC)Confirm venues, seating plans, and ceremonial protocolsJan 5LogisticsDistribute final run-through schedule to participants & partnersJan 6CommunicationsConduct full-dress rehearsal (including AIC dignitaries)Jan 8ProductionReview emergency response & contingency plansJan 9SecurityCoronation Day ExecutionJan 10All AIC teams
+
+5. Timeline Snapshot (Key Dates)
+
+
+Today (Nov 21, 2024): Launch AIC-specific kickoff activities.
+
+
+Testing Start (Latest): Dec 10, 2025.
+
+
+Testing End: Jan 9, 2026 (minimum of 30 days of live testing).
+
+
+Event Date: Jan 10, 2026.
+
+
+
+6. AIC-Focused Risk Mitigation
+Given the compressed timeline and the complexity of the event, the following risk mitigation strategies are in place:
+
+
+Compressed Schedule:
+
+
+To make up for time lost, video production and testing environment setup will run in parallel.
+
+
+Cross-functional teams from all AIC departments will collaborate to handle multiple tasks simultaneously.
+
+
+
+
+Resource Constraints:
+
+
+Pre-approve overtime for AIC staff where necessary to meet deadlines.
+
+
+Engage vetted external vendors under AIC contracts to supplement internal resources, ensuring the project remains on schedule.
+
+
+
+
+Compliance:
+
+
+AIC Legal will be involved from Week 2 onward to ensure all promotional materials, security protocols, and other content are cleared for legal and compliance standards.
+
+
+
+
+
+Conclusion & Next Steps
+The AIC-Led Coronation Day Preparation is on a tight but manageable timeline. Key actions and deliverables are mapped out in detail to ensure all activities are tracked and dependencies are monitored closely.
+The AIC team will continue to collaborate across departments to mitigate risks and ensure that all milestones are met on time. Executive sign-offs and legal reviews will play a key role in maintaining compliance and quality throughout the process.
+By following this critical path and staying on top of daily progress, the Coronation Day event will be executed flawlessly.
+
+Let me know if you’d like to dive deeper into any of these sections or require further modifications!
